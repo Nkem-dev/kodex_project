@@ -15,16 +15,29 @@
     <header class="bg-[#1b1b1b]  w-full py-4  left-0 z-1000 fixed top-0 sm:bg-[#1b1b1b] sm:w-full sm:py-5   sm:fixed sm:top-0 sm:left-0 sm:z-1000">
       <nav class="flex justify-between items-center py-5 px-5 sm:flex sm:justify-between sm:px-6 sm:py-2 sm:items-center">
         <div>
-          <a href="input.html">
+          <a href="index.html">
             <img class=" w-[120px] !sm:w-[200px]" src="/src/img/kodexafricaLogo.png.png" alt="" />
           </a>
         </div>
 
          <div class="[filter:invert(100%)] sm:hidden">
-            <img class="w-10" src="/src/img/align-justify.svg" alt="">
+          
+              <!-- hamburger -->
+  <img src="/src/img/align-justify.svg" 
+       id="openMenu" 
+       class="w-10 cursor-pointer flex" 
+       alt="Open Menu">
+
+  <!-- close (X) -->
+  <img src="/src/img/close-large-fill.svg" 
+       id="closeMenu" 
+       class="w-10 cursor-pointer hidden" 
+       alt="Close Menu">
+
          </div>
 
 
+         <!-- desktop nav  -->
         <div
           class="hidden sm:flex sm:justify-center sm:items-center sm:gap-10 sm:text-[0.8rem] sm:text-[#ffffff] sm:px-20 sm:font-Poppins">
           <a href="index.html">Home</a>
@@ -39,28 +52,44 @@
             </a>
           </div>
         </div>
+
+
       </nav>
     </header>
 
-    <main class="relative w-full h-[73vh] sm:w-full sm:h-[80vh] sm:border-none sm:relative">
+
+
+  <!-- mobile nav -->
+<div id="mobileNav" 
+     class="w-full h-[820px] fixed top-[110px] lg:hidden left-[100%] z-[100] bg-[#1b1b1b] p-5 transition-all duration-500 ease-in-out">
+    <nav class="flex flex-col">
+    <a href="index.html">Home</a>
+    <a href="Aboutus.html">About Us</a>
+    <a href="Contactus.html">Contact Us</a>
+
+    </nav>
+
+</div>
+
+    <main class="relative w-full h-[700px] sm:w-full sm:h-[80vh] sm:border-none sm:relative">
         <div class="flex flex-col-reverse  sm:absolute sm:top-[4rem] sm:flex sm:flex-row sm:gap-20 sm:px-8">
             <div class="mt-7  sm:mt-35">
                   <div class="px-5">
-                <h4 class="font-Poppins text-[#232223] text-[0.8rem] font-light sm:font-Poppins sm:text-[#232223] sm:text-[0.8rem]">24/7 CUSTOMER SUPPORT</h4>
+                <h4 class="font-Poppins text-[#232223] text-[0.9rem] font-light sm:font-Poppins sm:text-[#232223] sm:text-[0.8rem]">24/7 CUSTOMER SUPPORT</h4>
             </div>
 
             <div class="mt-2 px-5 sm:mt-2">
                 <h3 class="text-3xl leading-10 font-Poppins font-bold sm:text-4xl text-[#E68815] sm:font-Poppins sm:font-bold sm:text-[#E68815]">Need Assistance? Contact Us</h3>
             </div>
 
-            <div class="font-Poppins px-5 mt-5  leading-6 sm:w-[650px] sm:mt-4">
-                <p class="sm:font-Poppins text-[#232223]  text-[0.8rem] sm:text-[#232223] sm:leading-7 sm:text-[0.9rem]">At Kodex Africa, we value your questions, feedback, and inquiries. We believe in fostering open communication with our customers and partners.</p>
+            <div class="font-Poppins px-5 mt-5  leading-7 sm:w-[650px] sm:mt-4">
+                <p class="sm:font-Poppins text-[#232223]  text-[1rem] sm:text-[#232223] sm:leading-7 sm:text-[0.9rem]">At Kodex Africa, we value your questions, feedback, and inquiries. We believe in fostering open communication with our customers and partners.</p>
             </div>
 
             </div>
 
             <div>
-                <img class="w-[600px] px-5 sm:w-[400px] rounded-t-lg sm:rounded-t-[30px]  sm:mt-[80px]"  src="/src/img/contact us image.jpeg" alt="">
+                <img class="w-[600px] px-5 sm:w-[400px] rounded-t-[35px] sm:rounded-t-[30px]  mt-40 sm:mt-[80px]"  src="/src/img/contact us image.jpeg" alt="">
             </div>
           
 
@@ -74,10 +103,10 @@
         </div>
     </div>
 
-    <div class="w-full h-[70vh] relative sm:w-full sm:h-[80vh] sm:relative ">
+    <div class="w-full h-[1100px] relative sm:w-full sm:h-[80vh] sm:relative ">
 
         <div class=" flex flex-col items-center gap-10 sm:flex sm:items-center sm:px-15 sm:mt-25 sm:flex-row sm:gap-10">
-            <div class=" w-[95%] h-[45vh] mt-15 bg-[#1b1b1b] text-[#F9F1E8] rounded-2xl border-2 sm:w-[800%] sm:mt-0 sm:h-[75vh] sm:border-none sm:rounded-[10px] sm:bg-[#1b1b1b] sm:text-[#F9F1E8] sm:p-9 ">
+            <div class=" p-7 w-[95%] h-[45vh] mt-15 bg-[#1b1b1b] text-[#F9F1E8] rounded-[15px] border-2 sm:w-[800%] sm:mt-0 sm:h-[75vh] sm:border-none sm:rounded-[10px] sm:bg-[#1b1b1b] sm:text-[#F9F1E8] sm:p-9 ">
                 <div>
                     <h3 class="text-[1.5rem] font-Poppins font-semibold sm:text-[1.3rem] sm:font-Poppins sm:font-semibold">Contact Information</h3>
                 </div>
@@ -177,24 +206,24 @@
                         <div class="sm:flex  sm:gap-[7rem] sm:items-center">
                             <div >
                                 <label for="name">Full Name</label> <br>
-                                <input class="w-[130%] border-2  rounded-[6px] bg-[#F9F1E8] px-3 py-2  sm:border-1 sm:px-3 sm:py-3 focus:outline-1 focus:outline-[#E68815]  sm:w-[150%] border-[#585757] sm:rounded-[6px]  sm:bg-[#F9F1E8]" type="text" placeholder="Enter your name">
+                                <input class="w-[130%] border-1  rounded-[6px] bg-[#F9F1E8] px-3 py-2  sm:border-1 sm:px-3 sm:py-3 focus:outline-1 focus:outline-[#E68815]  sm:w-[150%] border-[#585757] sm:rounded-[6px]  sm:bg-[#F9F1E8]" type="text" placeholder="Enter your name">
                             </div>
 
                             <div class="mt-4 sm:mt-0">
                                 <label for="name">Email</label> <br>
-                                <input class="w-[130%] border-2  rounded-[6px] bg-[#F9F1E8] px-3 py-2 border-[#585757] sm:border-1 focus:outline-1 focus:outline-[#E68815]  sm:px-3 sm:py-3 sm:w-[150%] sm:rounded-[6px] sm:bg-[#F9F1E8]" type="text" placeholder="Enter your email">
+                                <input class="w-[130%] border-1 rounded-[6px] bg-[#F9F1E8] px-3 py-2 border-[#585757] sm:border-1 focus:outline-1 focus:outline-[#E68815]  sm:px-3 sm:py-3 sm:w-[150%] sm:rounded-[6px] sm:bg-[#F9F1E8]" type="text" placeholder="Enter your email">
                             </div>
                         </div>
 
                         <div class="sm:flex sm:text-[0.8rem] sm:items-center sm:gap-[7rem] sm:mt-4">
                             <div class="mt-4 sm:mt-0">
                                 <label for="name">Phone Number</label> <br>
-                                <input class="w-[130%] border-2  rounded-[6px] bg-[#F9F1E8] px-3 py-2 border-[#585757] sm:border-1 focus:outline-1 focus:outline-[#E68815]  sm:px-3 sm:py-3 sm:w-[150%] sm:rounded-[6px] sm:bg-[#F9F1E8]" type="text" placeholder="Enter your phone number">
+                                <input class="w-[130%] border-1 rounded-[6px] bg-[#F9F1E8] px-3 py-2 border-[#585757] sm:border-1 focus:outline-1 focus:outline-[#E68815]  sm:px-3 sm:py-3 sm:w-[150%] sm:rounded-[6px] sm:bg-[#F9F1E8]" type="text" placeholder="Enter your phone number">
                             </div>
 
                             <div class="mt-4 sm:mt-0">
                                 <label for="name">Subject</label> <br>
-                                <input class="w-[130%] border-2  rounded-[6px] bg-[#F9F1E8] px-3 py-2 border-[#585757] sm:border-1 sm:px-3 sm:py-3 sm:w-[150%] focus:outline-1 focus:outline-[#E68815]  sm:rounded-[6px] sm:bg-[#F9F1E8]" type="text" placeholder="Enter your subject">
+                                <input class="w-[130%] border-1 rounded-[6px] bg-[#F9F1E8] px-3 py-2 border-[#585757] sm:border-1 sm:px-3 sm:py-3 sm:w-[150%] focus:outline-1 focus:outline-[#E68815]  sm:rounded-[6px] sm:bg-[#F9F1E8]" type="text" placeholder="Enter your subject">
                             </div>
 
                             
@@ -202,14 +231,14 @@
 
                         <div class="mt-4 sm:mt-4">
                             <label for="text">Message</label> <br>
-                             <textarea name="message" class="border-[#585757] border-2 overflow-hidden w-[130%] h-[10vh] bg-[#F9F1E8] rounded-[6px] sm:border-1 focus:outline-1 focus:outline-[#E68815] sm:overflow-hidden sm:w-[44.5vw] sm:rounded-[6px] sm:h-[15vh] sm:bg-[#F9F1E8]" >
+                             <textarea name="message" class="border-[#585757] border-1 overflow-hidden w-[130%] h-[10vh] bg-[#F9F1E8] rounded-[6px] sm:border-1 focus:outline-1 focus:outline-[#E68815] sm:overflow-hidden sm:w-[44.5vw] sm:rounded-[6px] sm:h-[15vh] sm:bg-[#F9F1E8]" >
                                 
                                 </textarea>
 
                         </div>
 
                         <div class="mt-4 sm:mt-3 ">
-                            <button class="hover:cursor-pointer hover:bg-[#e68815] bg-[#1b1b1b] px-10 py-3 rounded-2xl font-Poppins text-[#ffffff]   sm:bg-[#1b1b1b] sm:px-10 sm:py-3 sm:rounded-[10px] sm:font-Poppins sm:text-[#ffffff] sm:text-[1rem]  sm:ml-[450px]">Send</button>
+                            <button class="text-[1rem] hover:cursor-pointer hover:bg-[#e68815] bg-[#1b1b1b] px-10 py-3 rounded-[10px] font-Poppins text-[#ffffff]   sm:bg-[#1b1b1b] sm:px-10 sm:py-3 sm:rounded-[10px] sm:font-Poppins sm:text-[#ffffff] sm:text-[1rem]  sm:ml-[450px]">Send</button>
                         </div>
                        
 
@@ -319,6 +348,36 @@
         </div>
         
     </footer>
+
+    <script>
+  const openMenu = document.getElementById("openMenu");
+  const closeMenu = document.getElementById("closeMenu");
+  const mobileNav = document.getElementById("mobileNav");
+
+  // Open menu
+  openMenu.addEventListener("click", () => {
+    mobileNav.classList.remove("left-[100%]");
+    mobileNav.classList.add("left-0");
+
+    openMenu.classList.add("hidden");
+    openMenu.classList.remove("flex");
+
+    closeMenu.classList.remove("hidden");
+    closeMenu.classList.add("flex");
+  });
+
+  // Close menu
+  closeMenu.addEventListener("click", () => {
+    mobileNav.classList.remove("left-0");
+    mobileNav.classList.add("left-[100%]");
+
+    closeMenu.classList.add("hidden");
+    closeMenu.classList.remove("flex");
+
+    openMenu.classList.remove("hidden");
+    openMenu.classList.add("flex");
+  });
+</script>
 
     
 </body>

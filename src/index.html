@@ -24,10 +24,23 @@
         </div>
 
          <div class="[filter:invert(100%)] sm:hidden">
-            <img class="w-10" src="/src/img/align-justify.svg" alt="">
+          
+              <!-- hamburger -->
+  <img src="/src/img/align-justify.svg" 
+       id="openMenu" 
+       class="w-10 cursor-pointer flex" 
+       alt="Open Menu">
+
+  <!-- close (X) -->
+  <img src="/src/img/close-large-fill.svg" 
+       id="closeMenu" 
+       class="w-10 cursor-pointer hidden" 
+       alt="Close Menu">
+
          </div>
 
 
+         <!-- desktop nav  -->
         <div
           class="hidden sm:flex sm:justify-center sm:items-center sm:gap-10 sm:text-[0.8rem] sm:text-[#ffffff] sm:px-20 sm:font-Poppins">
           <a href="index.html">Home</a>
@@ -42,79 +55,100 @@
             </a>
           </div>
         </div>
+
+
       </nav>
     </header>
 
-    <main style="background: url(/src/img/second_slide.jpeg.jpeg); background-repeat: no-repeat; background-size: cover; background-position: fixed; position: relative; background-color: rgba(0, 0, 0, 0.708);  background-blend-mode: multiply;" class="w-full h-[100vh] sm:w-full sm:max-h-[100vh] ">
-      <div class="absolute top-[12rem] px-5 sm:px-0 sm:absolute sm:top-[13rem] ">
-        <h1 class="text-[1.6rem] font-Poppins text-center font-medium text-[#ffffff] sm:text-5xl sm:font-bold sm:text-[#ffffff]  sm:w-[80vw] sm:ml-[100px] sm:leading-14 sm:tracking-wider sm:font-Poppins sm:text-center">Creating A Perfect <span class="text-[#e68815] sm:text-[#e68815]">Workspace</span> For Ideas To Thrive</h1>
+
+
+  <!-- mobile nav -->
+<div id="mobileNav" 
+     class="w-full h-[820px] fixed top-[110px] lg:hidden left-[100%] z-[100] bg-[#1b1b1b] p-5 transition-all duration-500 ease-in-out">
+    <nav class="flex flex-col">
+    <a href="index.html">Home</a>
+    <a href="Aboutus.html">About Us</a>
+    <a href="Contactus.html">Contact Us</a>
+
+    </nav>
+
+</div>
+
+
+
+
+
+
+    <main style="background: url(/src/img/second_slide.jpeg.jpeg); background-repeat: no-repeat; background-size: cover; background-position: fixed; position: relative; background-color: rgba(0, 0, 0, 0.708);  background-blend-mode: multiply;" class="w-full h-[840px] sm:w-full sm:max-h-[100vh] ">
+      <div class="absolute top-[15rem] px-10 sm:px-0 sm:absolute sm:top-[13rem] ">
+        <h1 class="text-[1.9rem] font-Poppins text-center font-medium text-[#ffffff] sm:text-5xl sm:font-bold sm:text-[#ffffff]  sm:w-[80vw] sm:ml-[100px] sm:leading-14 sm:tracking-wider sm:font-Poppins sm:text-center">Creating A Perfect <span class="text-[#e68815] sm:text-[#e68815]">Workspace</span> For Ideas To Thrive</h1>
       </div>
       
-      <div class="absolute   top-[21rem] sm:absolute sm:top-[23rem]">
-        <p class="text-[0.9rem] text-center w-[75vw] text-[#ffffff] ml-[50px] font-Poppins sm:text-[1rem] sm:text-[#ffffff] sm:font-Poppins sm:w-[65vw] sm:tracking-wide sm:text-center sm:ml-[190px] sm:leading-6">It has always been our dream to provide a workspace that empowers individuals to thrive professionally. The Space ng is not just a workspace; it's a dynamic ecosystem that cultivates success.</p>
+      <div class="absolute   top-[25rem] sm:absolute sm:top-[23rem]">
+        <p class="text-[1.1rem] text-center  w-[95vw] text-[#ffffff] ml-[60px] font-Poppins sm:text-[1rem] sm:text-[#ffffff] sm:font-Poppins sm:w-[65vw] sm:tracking-wide sm:text-center sm:ml-[190px] sm:leading-6">It has always been our dream to provide a workspace that empowers individuals to thrive professionally. The Space ng is not just a workspace; it's a dynamic ecosystem that cultivates success.</p>
       </div>
 
-      <div class="absolute top-[30rem] sm:absolute sm:top-[30rem]">
+      <div class="absolute top-[37rem] sm:absolute sm:top-[30rem]">
             <a href="#">
-              <button class="hover:cursor-pointer hover:bg-[#1b1b1b] border-none px-10 py-3 text-[#ffffff] font-Poppins text-[1rem] bg-[#e68815] rounded-[9px] ml-25 sm:border-none sm:px-10 sm:py-3 sm:rounded-[8px] sm:bg-[#e68815]] sm:text-[0.8rem] sm:ml-[530px]"> Get In touch</button>
+              <button class="hover:cursor-pointer hover:bg-[#1b1b1b] border-none px-10 py-3 text-[#ffffff] font-Poppins text-[1.2rem] bg-[#e68815] rounded-[9px] ml-35 sm:border-none sm:px-10 sm:py-3 sm:rounded-[8px] sm:bg-[#e68815]] sm:text-[0.8rem] sm:ml-[530px]"> Get In touch</button>
             </a>
           </div>
     </main>
 
-    <div class="w-full h-[500px] relative sm:w-full sm:h-[80vh] sm:relative sm:bg-[#ffffff]">
+    <div class="w-full h-[800px] relative sm:w-full sm:h-[80vh] sm:relative sm:bg-[#ffffff]">
         <div data-aos="fade-up"  data-aos-easing="linear" data-aos-duration="700"  class="mt-25 sm:mt-[150px]">
-            <h2   class="text-center font-Poppins text-2xl font-medium bg-gradient-to-l from-[#242424] to-[#e68815] bg-clip-text text-transparent sm:text-center sm:font-Poppins sm:text-4xl sm:font-medium sm:bg-gradient-to-l sm:from-[#242424] sm:to-[#e68815] sm:bg-clip-text sm:text-transparent">Our Approach</h2>
+            <h2   class="text-center font-Poppins text-3xl font-medium bg-gradient-to-l from-[#242424] to-[#e68815] bg-clip-text text-transparent sm:text-center sm:font-Poppins sm:text-4xl sm:font-medium sm:bg-gradient-to-l sm:from-[#242424] sm:to-[#e68815] sm:bg-clip-text sm:text-transparent">Our Approach</h2>
         </div>
 
-        <div class="flex flex-col items-center justify-center gap-6 mt-6 sm:flex sm:flex-row  sm:gap-10 sm:justify-center sm:items-center sm:mt-[80px]">
+        <div class="flex flex-col items-center justify-center sm:px-10 px-0 gap-6 mt-8 sm:flex sm:flex-row  sm:gap-10 sm:justify-center sm:items-center sm:mt-[80px]">
 
 
-          <div data-aos="fade-up-right"  data-aos-easing="linear" data-aos-duration="1000" class="w-[90%] h-[43vh] border-none py-7 px-8 rounded-2xl bg-[#1b1b1b] sm:w-[30%] sm:h-[45vh] sm:border-none sm:rounded-[10px] sm:bg-[#1b1b1b] sm:py-5 sm:px-7">
+          <div data-aos="fade-up-right"  data-aos-easing="linear" data-aos-duration="1000" class="w-[86%] h-[55vh] border-none py-9 px-10 rounded-2xl bg-[#1b1b1b] sm:w-[30%] sm:h-[50vh] sm:border-none sm:rounded-[10px] sm:bg-[#1b1b1b] sm:py-5 sm:px-7">
 
-            <div class="border-none rounded-full w-[21%] h-[8vh] bg-[#ffffff]  sm:border-none sm:w-[15%] sm:h-[8vh] sm:rounded-full sm:bg-[#ffffff]">
-                <img src="/src/img/free-handshake-icon-1939-thumb.png" alt="" class="w-9 py-3 ml-3 sm:w-[25px] sm:py-3 sm:ml-3 sm:mt-[20px]">
+            <div class="border-none rounded-full w-[25%] h-[11vh] bg-[#ffffff]  sm:border-none sm:w-[15%] sm:h-[8vh] sm:rounded-full sm:bg-[#ffffff]">
+                <img src="/src/img/free-handshake-icon-1939-thumb.png" alt="" class="w-13 py-4 ml-3 sm:w-[25px] sm:py-3 sm:ml-3 sm:mt-[20px]">
             </div>
 
             <div>
-                <h3 class="text-[1.1rem] text-[#ffffff] mt-8 font-Poppins sm:font-Poppins sm:text-[1.1rem] sm:text-[#ffffff] sm:mt-[25px]">Partnerships and Collaborations</h3>
+                <h3 class="text-[1.28rem] text-[#ffffff] mt-10 font-Poppins sm:font-Poppins sm:text-[1.1rem] sm:text-[#ffffff] sm:mt-[25px]">Partnerships and Collaborations</h3>
             </div>
 
             <div>
-                <p class="font-Poppins text-[#ffffff] leading-6 text-[0.9rem] mt-3 sm:font-Poppins sm:text-[#ffffff] sm:text-[0.8rem] sm:mt-[10px] sm:leading-[20px]">We leverage strategic partnerships and collaborations in building the next generation of Africa’s Innovators.</p>
+                <p class="font-Poppins text-[#ffffff] leading-7 text-[1.1rem] mt-4 sm:font-Poppins sm:text-[#ffffff] sm:text-[0.9rem] sm:mt-[10px] sm:leading-[20px]">We leverage strategic partnerships and collaborations in building the next generation of Africa’s Innovators.</p>
             </div>
 
           </div>
 
-          <div  data-aos="fade-up"  data-aos-easing="linear" data-aos-duration="1000" class="w-[90%] h-[43vh] border-none py-7 px-8 rounded-2xl bg-[#1b1b1b] sm:w-[30%] sm:h-[45vh] sm:border-none sm:rounded-[10px] sm:bg-[#1b1b1b]  sm:py-5 sm:px-7 ">
+          <div  data-aos="fade-up"  data-aos-easing="linear" data-aos-duration="1000" class="w-[86%] h-[55vh] border-none py-9 px-10 rounded-2xl bg-[#1b1b1b] sm:w-[30%] sm:h-[50vh] sm:border-none sm:rounded-[10px] sm:bg-[#1b1b1b]  sm:py-5 sm:px-7 ">
 
-            <div class="border-none rounded-full w-[21%] h-[8vh] bg-[#ffffff]   sm:border-none sm:w-[15%] sm:h-[8vh] sm:rounded-full sm:bg-[#ffffff]">
-                 <img src="/src/img/community-removebg-preview.png" alt="" class="w-9 py-3 ml-3 sm:w-[25px] sm:py-3 sm:ml-3 sm:mt-[20px]">
+            <div class="border-none rounded-full w-[25%] h-[11vh] bg-[#ffffff]   sm:border-none sm:w-[15%] sm:h-[8vh] sm:rounded-full sm:bg-[#ffffff]">
+                 <img src="/src/img/community-removebg-preview.png" alt="" class="w-14 py-3 ml-3 sm:w-[25px] sm:py-3 sm:ml-3 sm:mt-[20px]">
             </div>
 
             <div>
-                <h3 class="text-[1.1rem] text-[#ffffff] mt-8 font-Poppins  sm:font-Poppins sm:text-[1.1rem] sm:text-[#ffffff] sm:mt-[25px]">Community of Problem Solvers</h3>
+                <h3 class="text-[1.28rem] text-[#ffffff] mt-8 font-Poppins  sm:font-Poppins sm:text-[1.1rem] sm:text-[#ffffff] sm:mt-[25px]">Community of Problem Solvers</h3>
             </div>
 
             <div>
-                <p class="font-Poppins text-[#ffffff] leading-6 text-[0.9rem] mt-3 sm:font-Poppins sm:text-[#ffffff] sm:text-[0.8rem]  sm:mt-[10px] sm:leading-[20px]">Through our pair-peer learning model, we build a community of problem solvers.</p>
+                <p class="font-Poppins text-[#ffffff] leading-7 text-[1.1rem] mt-4 sm:font-Poppins sm:text-[#ffffff] sm:text-[0.9rem]  sm:mt-[10px] sm:leading-[20px]">Through our pair-peer learning model, we build a community of problem solvers.</p>
             </div>
 
           </div>
 
-          <div data-aos="fade-up-left"  data-aos-easing="linear" data-aos-duration="1000" class="w-[90%] h-[43vh] border-none py-7 px-8 rounded-2xl bg-[#1b1b1b] sm:w-[30%] sm:h-[45vh] sm:border-none sm:rounded-[10px] sm:bg-[#1b1b1b] sm:py-5 sm:px-7">
+          <div data-aos="fade-up-left"  data-aos-easing="linear" data-aos-duration="1000" class="w-[86%] h-[55vh] border-none py-9 px-10 rounded-2xl bg-[#1b1b1b] sm:w-[30%] sm:h-[50vh] sm:border-none sm:rounded-[10px] sm:bg-[#1b1b1b] sm:py-5 sm:px-7">
 
-            <div class="border-none rounded-full w-[21%] h-[8vh] bg-[#ffffff]    sm:border-none sm:w-[15%] sm:h-[8vh] sm:rounded-full sm:bg-[#ffffff]">
+            <div class="border-none rounded-full w-[25%] h-[11vh] bg-[#ffffff]    sm:border-none sm:w-[15%] sm:h-[8vh] sm:rounded-full sm:bg-[#ffffff]">
 
-                 <img src="/src/img/graph-removebg-preview.png" alt="" class="w-9 py-3 ml-3 sm:w-[23px] sm:py-3 sm:ml-3  sm:mt-[20px]">
+                 <img src="/src/img/graph-removebg-preview.png" alt="" class="w-12 py-4 ml-5 sm:w-[23px] sm:py-3 sm:ml-3  sm:mt-[20px]">
 
             </div>
 
              <div>
-                <h3 class="text-[1.1rem] text-[#ffffff] mt-8 font-Poppins sm:font-Poppins sm:text-[1.1rem] sm:text-[#ffffff] sm:mt-[25px]">Delivery of Satisfying Services</h3>
+                <h3 class="text-[1.28rem] text-[#ffffff] mt-8 font-Poppins sm:font-Poppins sm:text-[1.1rem] sm:text-[#ffffff] sm:mt-[25px]">Delivery of Satisfying Services</h3>
             </div>
 
             <div>
-                <p class="font-Poppins text-[#ffffff] leading-6 text-[0.9rem] mt-3 sm:font-Poppins sm:text-[#ffffff] sm:text-[0.8rem] sm:mt-[10px] sm:leading-[20px]">By interpreting our client’s vision, we deliver satisfying services that yield business growth and increases their scoop of influence.</p>
+                <p class="font-Poppins text-[#ffffff] leading-7 text-[1.1rem] mt-4 sm:font-Poppins sm:text-[#ffffff] sm:text-[0.8rem] sm:mt-[10px] sm:leading-[20px]">By interpreting our client’s vision, we deliver satisfying services that yield business growth and increases their scoop of influence.</p>
             </div>
 
 
@@ -126,51 +160,52 @@
     </div>
 
 
-    <div class="w-full h-[1000px] bg-[#1b1b1b] mt-[700px] sm:mt-0 relative sm:w-full sm:h-[100vh] sm:bg-[#1b1b1b]  sm:relative">
+    <div class="w-full h-[1200px] bg-[#1b1b1b] mt-[700px] sm:mt-0 relative sm:w-full sm:h-[100vh] sm:bg-[#1b1b1b]  sm:relative">
 
         <div class="flex  flex-col-reverse justify-center items-center sm:justify-center sm:items-center sm:flex sm:flex-row">
 
+            <!-- data-aos="fade-left"  data-aos-easing="linear" data-aos-duration="1000" -->
             <div  class="px-9 sm:px-0">
-                 <div data-aos="fade-left"  data-aos-easing="linear" data-aos-duration="1000" class="w-[95%] rounded-[10px] transform origin-bottom-left -rotate-8 h-[25vh] py-6 px-6 bg-[#F6CE9E]  sm:w-[32%] sm:h-[30vh] sm:bg-[#F6CE9E] sm:rounded-[10px] sm:px-7 sm:py-6 sm:absolute sm:top-[9rem] sm:left-[5rem] sm:transform sm:origin-bottom-left sm:-rotate-8">
+                 <div data-aos="fade-left"  data-aos-easing="linear" data-aos-duration="500"  class="w-[80%] left-[4rem] absolute top-[40rem] rounded-[10px] transform origin-bottom-left -rotate-8 h-[30vh] py-6 px-6 bg-[#F6CE9E]  sm:w-[32%] sm:h-[30vh] sm:bg-[#F6CE9E] sm:rounded-[10px] sm:px-7 sm:py-6 sm:absolute sm:top-[9rem] sm:left-[5rem] sm:transform sm:origin-bottom-left sm:-rotate-8">
                 <div>
-                    <h3 class="font-Poppins text-[0.97rem] font-semibold sm:font-Poppins sm:text-[0.9rem] sm:font-semibold">Our Vision</h3>
+                    <h3 class="font-Poppins text-[1.2rem] font-semibold sm:font-Poppins sm:text-[0.9rem] sm:font-semibold">Our Vision</h3>
                 </div>
 
                 <div>
-                    <p class="mt-2 leading-4.5 sm:leading-4.6 sm:mt-2 font-Poppins text-[0.65rem] sm:font-Poppins sm:text-[0.75rem]  sm:font-normal">To be the driving force behind Africa's tech ecosystem, fostering innovation, knowledge sharing, and technological advancement to empower individuals and businesses, ultimately propelling Africa into a global technology leader.</p>
+                    <p class="mt-2 leading-5.9 sm:leading-4.6 sm:mt-2 font-Poppins text-[0.9rem] sm:font-Poppins sm:text-[0.75rem]  sm:font-normal">To be the driving force behind Africa's tech ecosystem, fostering innovation, knowledge sharing, and technological advancement to empower individuals and businesses, ultimately propelling Africa into a global technology leader.</p>
+                </div>
+                
+
+
+            </div>
+<!-- data-aos="fade-right"  data-aos-easing="linear" data-aos-duration="1000"  -->
+
+             <div data-aos="fade-right"  data-aos-easing="linear" data-aos-duration="500" class="absolute top-[53rem] left-[4rem] transform origin-top-left rotate-4 w-[80%] rounded-[10px] h-[27vh] py-6 px-7 bg-[#F7F7F7] sm:w-[32%] sm:h-[28.5vh] sm:bg-[#F7F7F7] sm:rounded-[10px] sm:px-6 sm:py-7 sm:absolute sm:top-[18rem] sm:left-[9rem] sm:transform sm:origin-top-left sm:rotate-4">
+                <div>
+                    <h3 class="font-Poppins text-[1.2rem] font-semibold  sm:font-Poppins sm:text-[0.9rem] sm:font-semibold">Our Mission</h3>
+                </div>
+
+                <div>
+                    <p class="mt-2 leading-5.7 sm:leading-4.6 sm:mt-2 font-Poppins text-[0.9rem] sm:font-Poppins sm:text-[0.75rem]  sm:font-normal">To harness the power of technology in transforming lives and businesses across the African continent. We are dedicated to achieving this through our Kodex Academy, Kodex Build & the SpaceNg.</p>
                 </div>
                 
 
 
             </div>
 
-
-             <div data-aos="fade-right"  data-aos-easing="linear" data-aos-duration="1000" class="absolute top-[43rem] transform origin-top-left rotate-4 w-[80%] rounded-[10px] h-[23vh] py-6 px-7 bg-[#F7F7F7] sm:w-[32%] sm:h-[28.5vh] sm:bg-[#F7F7F7] sm:rounded-[10px] sm:px-6 sm:py-7 sm:absolute sm:top-[18rem] sm:left-[9rem] sm:transform sm:origin-top-left sm:rotate-4">
-                <div>
-                    <h3 class="font-Poppins text-[0.97rem] font-semibold  sm:font-Poppins sm:text-[0.9rem] sm:font-semibold">Our Mission</h3>
-                </div>
-
-                <div>
-                    <p class="mt-2 leading-4.5 sm:leading-4.6 sm:mt-2 font-Poppins text-[0.66rem] sm:font-Poppins sm:text-[0.75rem]  sm:font-normal">To harness the power of technology in transforming lives and businesses across the African continent. We are dedicated to achieving this through our Kodex Academy, Kodex Build & the SpaceNg.</p>
-                </div>
-                
-
-
             </div>
 
-            </div>
-
-            <div data-aos="fade-left"  data-aos-easing="linear" data-aos-duration="1000" class="py-12 px-5 sm:py-0 sm:px-0 sm:absolute sm:left-[40rem] sm:top-[5rem]">
+            <div data-aos="fade-left"  data-aos-easing="linear" data-aos-duration="500" class="py-12 px-5 sm:py-0 sm:px-0 sm:absolute sm:left-[40rem] sm:top-[5rem]">
                 <div>
-                    <h3 class="text-[0.8rem] text-[#e68815] font-Poppins sm:text-[0.9rem] sm:font-Poppins sm:text-[#e68815]">BREAKING THE BARRIER INTO TECH</h3>
+                    <h3 class="text-[1rem] text-[#e68815] font-Poppins sm:text-[0.9rem] sm:font-Poppins sm:text-[#e68815]">BREAKING THE BARRIER INTO TECH</h3>
                 </div>
 
                 <div class="mt-4 sm:mt-[15px]">
-                    <h1 class="font-Poppins font-bold text-[1.9rem] leading-11 text-[#ffffff] sm:font-Poppins sm:font-bold sm:text-[2.8rem] sm:w-[40vw] sm:text-[#ffffff] sm:leading-13">Empowering Through <span class="text-[#e68815] sm:text-[#e68815]">Tech </span><span class="text-[#e68815] sm:text-[#e68815]">Inclusion </span>and <span class="sm:text-[#e68815]">Accessiblilty</span></h1>
+                    <h1 class="font-Poppins font-bold text-[2.3rem] leading-13 text-[#ffffff] sm:font-Poppins sm:font-bold sm:text-[2.8rem] sm:w-[40vw] sm:text-[#ffffff] sm:leading-13">Empowering Through <span class="text-[#e68815] sm:text-[#e68815]">Tech </span><span class="text-[#e68815] sm:text-[#e68815]">Inclusion </span>and <span class="text-[#e68815] sm:text-[#e68815]">Accessiblilty</span></h1>
                 </div>
 
-                <div class="mt-6 sm:w-[550px] sm:mt-[30px]">
-                    <p class="font-Poppins leading-6.5 text-[0.9rem] text-[#ffffff] sm:font-Poppins sm:text-[0.9rem] sm:text-[#ffffff] sm:leading-7.5 sm:tracking-wider sm:text-justify">We are committed to assisting people in overcoming obstacles that can make entering the tech industry challenging. We know that newcomers to tech encounter difficulties, so we put in the effort to simplify things. We provide accessible training, mentorship, and a welcoming community to ensure that anyone can participate, regardless of their financial situation, resources, or connections.</p>
+                <div class="mt-6 w-[500px]sm:w-[550px] sm:mt-[30px]">
+                    <p class="font-Poppins leading-8 text-[1.2rem] text-[#CCCCCC] sm:font-Poppins sm:text-[0.9rem] sm:text-[#CCCCCC] sm:leading-7.5 sm:tracking-wider sm:text-justify">We are committed to assisting people in overcoming obstacles that can make entering the tech industry challenging. We know that newcomers to tech encounter difficulties, so we put in the effort to simplify things. We provide accessible training, mentorship, and a welcoming community to ensure that anyone can participate, regardless of their financial situation, resources, or connections.</p>
                 </div>
 
                 
@@ -182,24 +217,25 @@
     </div>
 
 
-    <div class="w-full h-[150vh] relative sm:w-full sm:h-[70vh] sm:relative">
+    <div class="w-full h-[1400px] relative sm:w-full sm:h-[70vh] sm:relative">
 
         <div class="flex flex-col justify-center  items-center gap-10 sm:flex sm:flex-row sm:gap-10 sm:justify-center sm:items-center sm:mt-[150px]">
-          <div data-aos="flip-left"  data-aos-easing="linear" data-aos-duration="600" class="bg-[#FAE6CD]  w-[90%] border-none h-[40vh] px-8 py-7 rounded-2xl mt-20 sm:mt-0 sm:w-[30%] sm:h-[50vh] sm:border-none sm:rounded-[10px] sm:bg-[#FAE6CD] sm:py-2 sm:px-8">
 
-            <div class="sm:mt-[20px]">
-                <h2 class="text-center font-Poppins text-[1.3rem] font-semibold sm:text-center sm:font-Poppins sm:text-[1.2rem] sm:font-semibold">Kodex Academy</h2>
+          <div  data-aos="flip-left"  data-aos-easing="linear" data-aos-duration="600" class="bg-[#FAE6CD]  w-[90%] border-none h-[50vh] px-9 py-7 rounded-2xl mt-20 sm:mt-0 sm:w-[30%] sm:h-[50vh] sm:border-none sm:rounded-[10px] sm:bg-[#FAE6CD] sm:py-2 sm:px-8">
+
+            <div class="mt-4 sm:mt-[20px]">
+                <h2 class="text-center font-Poppins text-[1.5rem] font-semibold sm:text-center sm:font-Poppins sm:text-[1.2rem] sm:font-semibold">Kodex Academy</h2>
 
             </div>
 
             <div class="mt-6 sm:mt-[20px]">
-                <p class="font-Poppins leading-[1.5rem] text-[0.9rem] font-medium sm:font-normal  text-[#585757] sm:text-[0.92rem] sm:font-Poppins sm:text-[#585757] sm:leading-6">Kodex Academy Provides an Extensive selection of courses covering full-stack web development, mobile app development, UI/UX design, and data analysis.</p>
+                <p class="font-Poppins leading-[2rem] text-[1.2rem] font-normal sm:font-normal  text-[#585757] sm:text-[0.92rem] sm:font-Poppins sm:text-[#585757] sm:leading-6">Kodex Academy Provides an Extensive selection of courses covering full-stack web development, mobile app development, UI/UX design, and data analysis.</p>
             </div>
 
 
-            <div class="mt-4 ml-[70px] sm:mt-[20px] sm:ml-[60px]">
+            <div class="mt-6 ml-[70px] sm:mt-[20px] sm:ml-[60px]">
                 <a href="">
-                    <button class="hover:cursor-pointer hover:bg-[#1b1b1b] border-none px-10 py-3 rounded-[10px] bg-[#e68815] text-[#ffffff] font-Poppins text-[0.9rem] sm:border-none sm:px-10 sm:py-3 sm:rounded-[10px] sm:bg-[#e68815] sm:font-Poppins sm:text-[#ffffff] sm:text-[0.9rem]">Learn More</button>
+                    <button class="hover:cursor-pointer hover:bg-[#1b1b1b] border-none px-10 py-3 rounded-[10px] bg-[#e68815] text-[#ffffff] font-Poppins text-[1.3rem] sm:border-none sm:px-10 sm:py-3 sm:rounded-[10px] sm:bg-[#e68815] sm:font-Poppins sm:text-[#ffffff] sm:text-[0.9rem]">Learn More</button>
 
                 </a>
                 
@@ -207,20 +243,21 @@
 
           </div>
 
-          <div  data-aos="flip-up"  data-aos-easing="linear" data-aos-duration="600" class="bg-[#FAE6CD]  w-[90%] border-none h-[40vh] rounded-2xl sm:w-[30%] sm:h-[50vh] px-8 py-7 sm:rounded-[10px] sm:bg-[#FAE6CD]  sm:py-2 sm:px-8  ">
+           <!-- data-aos="flip-up"  data-aos-easing="linear" data-aos-duration="600" -->
+          <div  class="bg-[#FAE6CD]  w-[90%] border-none h-[50vh] rounded-2xl sm:w-[30%] sm:h-[50vh] px-9 py-7 sm:rounded-[10px] sm:bg-[#FAE6CD]  sm:py-2 sm:px-8  ">
             
-             <div class="sm:mt-[20px]">
-                <h2 class="text-center font-Poppins text-[1.3rem] font-semibold  sm:text-center sm:font-Poppins sm:text-[1.2rem] sm:font-semibold">Kodex Build</h2>
+             <div class="mt-4 sm:mt-[20px]">
+                <h2 class="text-center font-Poppins text-[1.5rem] font-semibold  sm:text-center sm:font-Poppins sm:text-[1.2rem] sm:font-semibold">Kodex Build</h2>
 
             </div>
 
             <div class="mt-6 sm:mt-[20px] ">
-                <p class="font-Poppins leading-[1.5rem] text-[0.9rem] sm:font-normal font-medium   text-[#585757] sm:text-[0.92rem] sm:font-Poppins sm:text-[#585757] sm:leading-6">Kodex Build operates as a complete development studio, delivering cutting-edge product development services to both corporate clients and individuals.</p>
+                <p class="font-Poppins leading-[2rem] text-[1.2rem] font-normal sm:font-normal   text-[#585757] sm:text-[0.92rem] sm:font-Poppins sm:text-[#585757] sm:leading-6">Kodex Build operates as a complete development studio, delivering cutting-edge product development services to both corporate clients and individuals.</p>
             </div>
 
             <div class="mt-4 ml-[70px] sm:mt-[40px] sm:ml-[60px] ">
                 <a href="">
-                    <button class="hover:cursor-pointer hover:bg-[#1b1b1b] border-none px-10 py-3 rounded-[10px] bg-[#e68815] text-[#ffffff] font-Poppins text-[0.9rem] sm:border-none sm:px-10 sm:py-3 sm:rounded-[10px] sm:bg-[#e68815] sm:font-Poppins sm:text-[#ffffff] sm:text-[0.9rem]">Learn More</button>
+                    <button class="hover:cursor-pointer hover:bg-[#1b1b1b] border-none px-10 py-3 rounded-[10px] bg-[#e68815] text-[#ffffff] font-Poppins text-[1.3rem] sm:border-none sm:px-10 sm:py-3 sm:rounded-[10px] sm:bg-[#e68815] sm:font-Poppins sm:text-[#ffffff] sm:text-[0.9rem]">Learn More</button>
 
                 </a>
                 
@@ -231,20 +268,21 @@
 
           </div>
 
-          <div  data-aos="flip-right"  data-aos-easing="linear" data-aos-duration="600" class="bg-[#FAE6CD]  w-[90%] border-none h-[40vh] px-8 py-7  rounded-2xl sm:w-[30%] sm:h-[50vh]  sm:rounded-[10px] sm:bg-[#FAE6CD] sm:py-2 sm:px-8">
+         
+          <div  data-aos="flip-right"  data-aos-easing="linear" data-aos-duration="600"  class="bg-[#FAE6CD]  w-[90%] border-none h-[50vh] px-9 py-7  rounded-2xl sm:w-[30%] sm:h-[50vh]  sm:rounded-[10px] sm:bg-[#FAE6CD] sm:py-2 sm:px-8">
 
-            <div class="sm:mt-[20px]">
-                <h2 class="text-center font-Poppins text-[1.3rem] font-semibold  sm:text-center sm:font-Poppins sm:text-[1.2rem] sm:font-semibold">The Space NG</h2>
+            <div class="mt-4 sm:mt-[20px]">
+                <h2 class="text-center font-Poppins text-[1.5rem] font-semibold  sm:text-center sm:font-Poppins sm:text-[1.2rem] sm:font-semibold">The Space NG</h2>
 
             </div>
 
             <div class="mt-6 sm:mt-[20px]">
-                <p class="font-Poppins font-medium leading-[1.35rem] text-[0.9rem] sm:font-normal text-[#585757] sm:text-[0.92rem] sm:font-Poppins sm:text-[#585757] sm:leading-6">The Space NG aims at establishing an environment and community that fosters collaboration, connecting entrepreneurs, professionals, and creatives while offering growth opportunities.</p>
+                <p class="font-Poppins font-normal leading-[1.8rem] text-[1.2rem] sm:font-normal text-[#585757] sm:text-[0.92rem] sm:font-Poppins sm:text-[#585757] sm:leading-6">The Space NG aims at establishing an environment and community that fosters collaboration, connecting entrepreneurs, professionals, and creatives while offering growth opportunities.</p>
             </div>
 
             <div class="mt-2.5 ml-[70px]  sm:mt-[20px] sm:ml-[60px]">
                 <a href="">
-                    <button class="hover:cursor-pointer hover:bg-[#1b1b1b] border-none px-10 py-3 rounded-[10px] bg-[#e68815] text-[#ffffff] font-Poppins text-[0.9rem]  sm:border-none sm:px-10 sm:py-3 sm:rounded-[10px] sm:bg-[#e68815] sm:font-Poppins sm:text-[#ffffff] sm:text-[0.9rem]">Learn More</button>
+                    <button class="hover:cursor-pointer hover:bg-[#1b1b1b] border-none px-10 py-3 rounded-[10px] bg-[#e68815] text-[#ffffff] font-Poppins text-[1.3rem]  sm:border-none sm:px-10 sm:py-3 sm:rounded-[10px] sm:bg-[#e68815] sm:font-Poppins sm:text-[#ffffff] sm:text-[0.9rem]">Learn More</button>
 
                 </a>
                 
@@ -261,27 +299,28 @@
 
 
 
-    <div class="w-full h-[155vh] relative sm:w-full sm:h-[150vh]  sm:relative">
+    <div class="w-full h-[1650px] relative sm:w-full sm:h-[1000px]  sm:relative">
 
         <div class="ml-6 sm:ml-0">
-            <h2 class="text-left font-Poppins text-[1.5rem] font-medium  bg-gradient-to-l from-[#242424] to-[#e68815] bg-clip-text text-transparent sm:text-center sm:font-Poppins sm:text-[2rem] sm:font-medium sm:bg-gradient-to-l sm:from-[#242424] sm:to-[#e68815] sm:bg-clip-text sm:text-transparent ">We've Got All The Skills You Need</h2>
+            <h2 class="text-left font-Poppins text-[2rem] font-medium  bg-gradient-to-l from-[#242424] to-[#e68815] bg-clip-text text-transparent sm:text-center sm:font-Poppins sm:text-[2rem] sm:font-medium sm:bg-gradient-to-l sm:from-[#242424] sm:to-[#e68815] sm:bg-clip-text sm:text-transparent ">We've Got All The Skills You Need</h2>
         </div>
 
-        <div  data-aos="zoom-in"  data-aos-easing="linear" data-aos-duration="500" class="flex flex-col-reverse gap-7 justify-center px-7 items-center sm:flex-row sm:flex sm:mt-[40px] sm:justify-center sm:items-center sm:px-8 sm:gap-[30px]">
+        <!-- data-aos="zoom-in"  data-aos-easing="linear" data-aos-duration="500" -->
+        <div   class="flex flex-col-reverse gap-9 justify-center px-7 items-center sm:flex-row sm:flex sm:mt-[40px] sm:justify-center sm:items-center sm:px-8 sm:gap-[30px]">
             <div  >
                 <div>
-                <h1 class="font-Poppins text-[1.7rem] font-bold sm:font-Poppins sm:text-[2.8rem] sm:font-bold sm:w-[600px] sm:tracking-wide sm:leading-14">Helping <span class="text-[#e68815] sm:text-[#e68815]">Africa's </span> Bright <span class="text-[#e68815] sm:text-[#e68815]">Tech</span> Minds Thrive</h1>
+                <h1 class="font-Poppins text-[2.2rem] font-bold sm:font-Poppins sm:text-[2.8rem] sm:font-bold sm:w-[600px] sm:tracking-wide sm:leading-14">Helping <span class="text-[#e68815] sm:text-[#e68815]">Africa's </span> Bright <span class="text-[#e68815] sm:text-[#e68815]">Tech</span> Minds Thrive</h1>
             </div>
 
-            <div  class="mt-4 sm:mt-[25px] font-Poppins text-[#585757] text-[0.9rem] sm:font-Poppins sm:text-[0.9rem] sm:text-[#585757] sm:text-justify sm:w-[550px] sm:leading-8">
+            <div  class="mt-6 sm:mt-[25px] font-Poppins leading-8 text-[#585757] text-[1.2rem] sm:font-Poppins sm:text-[0.9rem] sm:text-[#585757] sm:text-justify sm:w-[550px] sm:leading-8">
                 <p class="">Here at Kodex Africa, we have a crucial role in supporting Africa's tech-savvy talents. We offer a wide range of programs aimed at nurturing valuable, long-lasting skills. Through scholarships and financial assistance, we make sure that financial challenges don't stand in the way of quality education. We focus on skill-building, offering coding bootcamps and workshops that prepare aspiring tech professionals with highly sought-after expertise.</p>
 <p>Mentorship is at the heart of our approach, connecting emerging tech talents with experienced professionals who provide guidance and networking opportunities.</p>
                 <p>In summary, our versatile strategy encompasses education, skill development, mentorship, and entrepreneurship. We empower Africa's tech enthusiasts to thrive, innovate, and cultivate skills that stand the test of time. This, in turn, contributes to sustainable development and enhances Africa's influence in the global tech community.</p>
             </div>
 
-            <div class="mt-6 sm:mt-[30px]">
+            <div class="mt-8 sm:mt-[30px]">
                 <a href="">
-                    <button class="hover:cursor-pointer hover:bg-[#1b1b1b] border-none px-9 py-2 text-[#ffffff] font-Poppins text-[1rem] bg-[#e68815] rounded-[9px] sm:border-none sm:px-10 sm:py-3 sm:rounded-[10px] sm:bg-[#e68815] sm:font-Poppins sm:text-[#ffffff] sm:text-[0.9rem]">Apply Now</button>
+                    <button class="hover:cursor-pointer hover:bg-[#1b1b1b] border-none px-9 py-2 text-[#ffffff] font-Poppins text-[1.4rem] bg-[#e68815] rounded-[9px] sm:border-none sm:px-10 sm:py-3 sm:rounded-[10px] sm:bg-[#e68815] sm:font-Poppins sm:text-[#ffffff] sm:text-[0.9rem]">Apply Now</button>
                 </a>
                 
             </div>
@@ -300,29 +339,30 @@
     </div>
 
 
-    <div class="w-full h-[115vh] bg-[#1b1b1b] relative sm:w-full sm:h-[100vh] sm:bg-[#1b1b1b]  sm:relative">
+    <div class="w-full h-[1250px] bg-[#1b1b1b] relative sm:w-full sm:h-[100vh] sm:bg-[#1b1b1b]  sm:relative">
 
-        <div data-aos="zoom-out"  data-aos-easing="linear" data-aos-duration="500" class="flex justify-center flex-col items-center sm:items-center sm:flex-row sm:flex sm:justify-center  ">
+        
+        <div data-aos="zoom-out"  data-aos-easing="linear" data-aos-duration="500"  class="flex justify-center flex-col items-center sm:items-center sm:flex-row sm:flex sm:justify-center  ">
             <div class="mt-20 sm:mt-[] ">
-                <div class="w-[55%] h-[40vh] bg-[#e68815] rounded-tl-[30px] absolute left-[5rem] rounded-br-[30px] sm:w-[23%] sm:h-[65vh] sm:bg-[#e68815] sm:rounded-tl-[15%] sm:absolute  sm:left-[10rem] sm:rounded-br-[15%]"></div>
+                <div class="w-[55%] h-[50vh] bg-[#e68815] rounded-tl-[30px] absolute left-[5rem] rounded-br-[30px] sm:w-[23%] sm:h-[65vh] sm:bg-[#e68815] sm:rounded-tl-[15%] sm:absolute  sm:left-[10rem] sm:rounded-br-[15%]"></div>
 
                 <div>
-                    <img class="absolute left-[6rem]   w-[55%] h-[40vh] rounded-tl-[30px] rounded-br-[30px] sm:absolute sm:ml-[90px] sm:top-[7rem] sm:w-[23%] sm:h-[65vh] sm:rounded-tl-[15%] sm:rounded-br-[15%] " src="/src/img/brochure.png.png" alt="">
+                    <img class="absolute left-[6rem]   w-[55%] h-[50vh] rounded-tl-[30px] rounded-br-[30px] sm:absolute sm:ml-[90px] sm:top-[7rem] sm:w-[23%] sm:h-[65vh] sm:rounded-tl-[15%] sm:rounded-br-[15%] " src="/src/img/brochure.png.png" alt="">
                 </div>
             </div>
 
-            <div class="absolute px-6 sm:px-0 top-[27rem] sm:absolute sm:left-[40rem] sm:top-[8rem]">
+            <div class="absolute px-6 sm:px-0 top-[32rem] sm:absolute sm:left-[40rem] sm:top-[8rem]">
                 <div>
-                    <h1 class="leading-8 font-Poppins text-[1.7rem] font-bold text-[#ffffff]  sm:font-Poppins sm:text-[2.7rem] sm:font-bold sm:text-[#ffffff] sm:tracking-wide sm:leading-13">Download Our <span class="text-[#e68815] sm:text-[#e68815]">Business Brochure</span></h1>
+                    <h1 class="leading-12 font-Poppins text-[2.1rem] font-bold text-[#ffffff]  sm:font-Poppins sm:text-[2.7rem] sm:font-bold sm:text-[#ffffff] sm:tracking-wide sm:leading-13">Download Our <span class="text-[#e68815] sm:text-[#e68815]">Business Brochure</span></h1>
                 </div>
 
-                <div class="mt-3.5 sm:mt-[20px] sm:w-[550px]">
-                    <p class="sm:tracking-wider font-Poppins font-light text-[0.84rem] leading-6 text-[#ffffff] sm:font-Poppins sm:text-[0.9rem] sm:text-[#ffffff] sm:text-justify sm:font-medium sm:leading-8">Our business brochure is a captivating and informative document that showcases the essence of our company. With a sleek design, engaging content, and striking visuals, it effectively communicates our mission, products, and services to our target audience. It serves as a powerful tool to introduce our brand and leave a lasting impression on potential clients and partners.</p>
+                <div class="mt-5 sm:mt-[20px] sm:w-[550px]">
+                    <p class="sm:tracking-wider font-Poppins font-light text-[1.2rem] leading-10 text-[#ffffff] sm:font-Poppins sm:text-[0.9rem] sm:text-[#ffffff] sm:text-justify sm:font-medium sm:leading-8">Our business brochure is a captivating and informative document that showcases the essence of our company. With a sleek design, engaging content, and striking visuals, it effectively communicates our mission, products, and services to our target audience. It serves as a powerful tool to introduce our brand and leave a lasting impression on potential clients and partners.</p>
                 </div>
 
-                <div class="mt-5 sm:mt-[30px]">
+                <div class="mt-10 sm:mt-[30px]">
                     <a href="">
-                        <button class="hover:cursor-pointer hover:bg-[#1b1b1b] border-none px-9 py-2 text-[#ffffff] font-Poppins text-[1rem] bg-[#e68815] rounded-[9px] sm:px-10 sm:py-3 sm:rounded-[10px] sm:bg-[#e68815] sm:font-Poppins sm:text-[#ffffff] sm:text-[0.9rem]">Download</button>
+                        <button class="hover:cursor-pointer hover:bg-[#1b1b1b] border-none px-12 py-3 text-[#ffffff] font-Poppins text-[1.3rem] bg-[#e68815] rounded-[9px] sm:px-10 sm:py-3 sm:rounded-[10px] sm:bg-[#e68815] sm:font-Poppins sm:text-[#ffffff] sm:text-[0.9rem]">Download</button>
                     </a>
                 </div>
             </div>
@@ -332,7 +372,7 @@
     </div>
 
 
-    <div class="w-full h-[150vh] relative sm:w-full sm:h-[140vh] sm:relative">
+    <div class="w-full h-[1200px] relative sm:w-full sm:h-[140vh] sm:relative">
         <div class="flex flex-col sm:flex-row sm:flex   sm:justify-center">
             <div class="sm:mt-[128px] ">
                 <div class="sm:border-1 sm:border-gray-300 sm:w-[75%]  sm:h-[45vh] sm:rounded-[10px] sm:px-5  sm:ml-[90px]">
@@ -340,35 +380,35 @@
                 </div>
 
                 <div class="sm:mt-[40px] ml-7 mt-20 sm:absolute sm:w-[42%] sm:ml-[60px]">
-                    <img class="rounded-[10px] w-[95%] h-[40vh] sm:rounded-[10px]  sm:h-[75vh]" src="/src/img/supportUs23.jpeg" alt="">
+                    <img class="rounded-[10px] w-[95%] h-[50vh] sm:rounded-[10px]  sm:h-[75vh]" src="/src/img/supportUs23.jpeg" alt="">
                 </div>
             </div>
 
-            <div class="w-full h-[150vh] mt-[15px] rounded-2xl bg-[#232223] sm:w-[76%] sm:h-[150vh] sm:rounded-[10px] sm:mt-[120px] sm:mr-[50px] sm:bg-[#232223]">
-                <div class="border-2 w-[21%] mt-[20px] ml-8 h-[11vh] p-[20px] rounded-[50%] bg-[#F9F1E8]  sm:border-2 sm:w-[13%] sm:h-[16vh] sm:rounded-[50%] sm:bg-[#F9F1E8] sm:py-7 sm:px-[15px] sm:mt-[40px] ">
-                    <img class="w-10 sm:w-[70%] sm:ml-[10px]" src="/src/img/shake2-removebg-preview.png" alt="">
+            <div class="w-full h-[1250px] mt-[15px] rounded-2xl bg-[#232223] sm:w-[76%] sm:h-[900px] sm:rounded-[10px] sm:mt-[120px] sm:mr-[50px] sm:bg-[#232223]">
+                <div class="border-2 w-[25%] mt-[20px] ml-8 h-[16vh] p-[20px] rounded-[50%] bg-[#F9F1E8]  sm:border-2 sm:w-[13%] sm:h-[16vh] sm:rounded-[50%] sm:bg-[#F9F1E8] sm:py-7 sm:px-[15px] sm:mt-[40px] ">
+                    <img class="w-50 sm:w-[70%] sm:ml-[10px]" src="/src/img/shake2-removebg-preview.png" alt="">
                 </div>
 
                 <div class="px-4 mt-6 sm:px-0 sm:ml-[120px] sm:mt-[30px]">
                     <div>
-                        <h4 class="text-[#CCCCCC] font-Poppins text-[0.8rem] sm:text-[#CCCCCC] sm:font-Poppins sm:text-[0.8rem] sm:font-light">SUPPORT US</h4>
+                        <h4 class="text-[#CCCCCC] font-Poppins text-[1rem] sm:text-[#CCCCCC] sm:font-Poppins sm:text-[0.8rem] sm:font-light">SUPPORT US</h4>
                     </div>
 
                     <div class=" sm:mt-[2px]">
-                        <h2 class="text-[#E68815] font-Poppins text-[1.6rem] font-bold  sm:text-[#E68815] sm:font-Poppins sm:text-[2rem] sm:font-bold">Support the Mission</h2>
+                        <h2 class="text-[#E68815] font-Poppins text-[2rem] font-bold  sm:text-[#E68815] sm:font-Poppins sm:text-[2rem] sm:font-bold">Support the Mission</h2>
                     </div>
 
-                    <div class="mt-4 leading-6 sm:mt-[10px] sm:w-[550px] sm:leading-6">
-                        <p class="text-[#CCCCCC] font-Poppins text-[0.85rem] sm:text-[#CCCCCC] sm:font-Poppins sm:text-[0.8rem] sm:text-justify">Kodex Africa is on the mission of empowering the bright minds in Africa and drive technological innovation across the continent. Your support is essential in helping us achieve this goal and create a lasting impact. Your financial contributions directly assist our initiatives, which include providing scholarships and funding tech education programs. Every donation, regardless of its size, plays a significant role in advancing our mission.</p>
-                       <p class="text-[#CCCCCC] font-Poppins text-[0.85rem] sm:text-[#CCCCCC] sm:font-Poppins sm:text-[0.8rem] sm:text-justify">You can also consider volunteering your time and expertise. Your skills can make a meaningful difference by mentoring aspiring tech professionals, participating in educational workshops, or assisting with our various projects. If you represent an organization or business, you can explore partnership opportunities with Kodex Africa. Collaborative efforts have the potential to expand our reach and generate innovative solutions to tech challenges in Africa.</p>
-                    <p class="text-[#CCCCCC] font-Poppins text-[0.85rem] sm:text-[#CCCCCC] sm:font-Poppins sm:text-[0.8rem] sm:text-justify">Become an advocate for tech education and innovation in Africa. Spread the word about our mission, engage with policymakers, and help raise awareness about the importance of supporting tech talent in the region. Additionally, you can contribute by donating tech equipment or educational materials to enhance our educational programs and resources.</p>
-                    <p class="text-[#CCCCCC] font-Poppins text-[0.85rem] sm:text-[#CCCCCC] sm:font-Poppins sm:text-[0.8rem] sm:text-justify">By supporting Kodex Africa, you are making an investment in the future of Africa's tech industry and contributing to sustainable development. Join us in empowering the next generation of tech leaders and innovators. Together, we can shape a brighter future for Africa's tech ecosystem.</p>
+                    <div class="mt-4 leading-7 sm:mt-[10px] sm:w-[550px] sm:leading-6">
+                        <p class="text-[#CCCCCC] font-Poppins text-[1rem] sm:text-[#CCCCCC] sm:font-Poppins sm:text-[0.8rem] sm:text-justify">Kodex Africa is on the mission of empowering the bright minds in Africa and drive technological innovation across the continent. Your support is essential in helping us achieve this goal and create a lasting impact. Your financial contributions directly assist our initiatives, which include providing scholarships and funding tech education programs. Every donation, regardless of its size, plays a significant role in advancing our mission.</p>
+                       <p class="text-[#CCCCCC] font-Poppins text-[1rem] sm:text-[#CCCCCC] sm:font-Poppins sm:text-[0.8rem] sm:text-justify">You can also consider volunteering your time and expertise. Your skills can make a meaningful difference by mentoring aspiring tech professionals, participating in educational workshops, or assisting with our various projects. If you represent an organization or business, you can explore partnership opportunities with Kodex Africa. Collaborative efforts have the potential to expand our reach and generate innovative solutions to tech challenges in Africa.</p>
+                    <p class="text-[#CCCCCC] font-Poppins text-[1rem] sm:text-[#CCCCCC] sm:font-Poppins sm:text-[0.8rem] sm:text-justify">Become an advocate for tech education and innovation in Africa. Spread the word about our mission, engage with policymakers, and help raise awareness about the importance of supporting tech talent in the region. Additionally, you can contribute by donating tech equipment or educational materials to enhance our educational programs and resources.</p>
+                    <p class="text-[#CCCCCC] font-Poppins text-[1rem] sm:text-[#CCCCCC] sm:font-Poppins sm:text-[0.8rem] sm:text-justify">By supporting Kodex Africa, you are making an investment in the future of Africa's tech industry and contributing to sustainable development. Join us in empowering the next generation of tech leaders and innovators. Together, we can shape a brighter future for Africa's tech ecosystem.</p>
 
                     </div>
 
-                    <div class="mt-5 sm:mt-[30px]">
+                    <div class="mt-7 sm:mt-[30px]">
                         <a href="#">
-                            <button class="sm:hover:cursor-pointer sm:hover:bg-[#1b1b1b] border-none px-9 py-3 text-[#ffffff] font-Poppins text-[1rem] bg-[#e68815] rounded-[9px] sm:border-none sm:px-10 sm:py-3 sm:rounded-[10px] sm:bg-[#e68815] sm:font-Poppins sm:text-[#ffffff] sm:text-[0.9rem]">Partner With Us</button>
+                            <button class="sm:hover:cursor-pointer sm:hover:bg-[#1b1b1b] border-none px-9 py-3 text-[#ffffff] font-Poppins text-[1.2rem] bg-[#e68815] rounded-[9px] sm:border-none sm:px-10 sm:py-3 sm:rounded-[10px] sm:bg-[#e68815] sm:font-Poppins sm:text-[#ffffff] sm:text-[0.9rem]">Partner With Us</button>
                         </a>
                     </div>
                 </div>
@@ -377,13 +417,15 @@
 
     </div>
 
+    <!-- data-aos="fade-up"  data-aos-easing="linear" data-aos-duration="550"  -->
     <div class="w-full h-[75vh] relative sm:relative sm:w-full sm:h-[90vh] ">
-        <div data-aos="fade-up"  data-aos-easing="linear" data-aos-duration="550" class="mt-[460px] sm:mt-[280px]">
-            <h1 class="text-center text-[1.2rem] font-Poppins tracking-[0.4rem] font-semibold bg-gradient-to-l from-[#242424] to-[#e68815] bg-clip-text text-transparent sm:text-center sm:text-[1.4rem] sm:font-Poppins sm:tracking-[0.7rem] sm:font-bold sm:bg-gradient-to-l sm:from-[#242424] sm:to-[#e68815] sm:bg-clip-text sm:text-transparent">TESTIMONIALS</h1>
+        <div class="mt-[700px] sm:mt-[280px]">
+            <h1 class="text-center text-[1.6rem] font-Poppins tracking-[0.4rem] font-semibold bg-gradient-to-l from-[#242424] to-[#e68815] bg-clip-text text-transparent sm:text-center sm:text-[1.4rem] sm:font-Poppins sm:tracking-[0.7rem] sm:font-bold sm:bg-gradient-to-l sm:from-[#242424] sm:to-[#e68815] sm:bg-clip-text sm:text-transparent">TESTIMONIALS</h1>
         </div>
 
+        <!-- data-aos="zoom-in-up"  data-aos-easing="linear" data-aos-duration="550" -->
 
-        <div data-aos="zoom-in-up"  data-aos-easing="linear" data-aos-duration="550" class="px-6 sm:px-0 mt-5 sm:mt-0">
+        <div  class="px-6 sm:px-0 mt-5 sm:mt-0">
             <div class="sm:mt-[70px]  sm:ml-[50px]">
                 <img class="w-9 sm:w-15" src="/src/img/icon10.svg" alt="">
             </div>
@@ -572,5 +614,35 @@
   <script>
     AOS.init();
   </script>
+
+  <script>
+  const openMenu = document.getElementById("openMenu");
+  const closeMenu = document.getElementById("closeMenu");
+  const mobileNav = document.getElementById("mobileNav");
+
+  // Open menu
+  openMenu.addEventListener("click", () => {
+    mobileNav.classList.remove("left-[100%]");
+    mobileNav.classList.add("left-0");
+
+    openMenu.classList.add("hidden");
+    openMenu.classList.remove("flex");
+
+    closeMenu.classList.remove("hidden");
+    closeMenu.classList.add("flex");
+  });
+
+  // Close menu
+  closeMenu.addEventListener("click", () => {
+    mobileNav.classList.remove("left-0");
+    mobileNav.classList.add("left-[100%]");
+
+    closeMenu.classList.add("hidden");
+    closeMenu.classList.remove("flex");
+
+    openMenu.classList.remove("hidden");
+    openMenu.classList.add("flex");
+  });
+</script>
   </body>
 </html>
