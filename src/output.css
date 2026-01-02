@@ -296,8 +296,20 @@
   .mt-25 {
     margin-top: calc(var(--spacing) * 25);
   }
+  .mt-35 {
+    margin-top: calc(var(--spacing) * 35);
+  }
   .mt-40 {
     margin-top: calc(var(--spacing) * 40);
+  }
+  .mt-50 {
+    margin-top: calc(var(--spacing) * 50);
+  }
+  .mt-55 {
+    margin-top: calc(var(--spacing) * 55);
+  }
+  .mt-60 {
+    margin-top: calc(var(--spacing) * 60);
   }
   .mt-\[10px\] {
     margin-top: 10px;
@@ -491,6 +503,9 @@
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
+  .w-7 {
+    width: calc(var(--spacing) * 7);
+  }
   .w-9 {
     width: calc(var(--spacing) * 9);
   }
@@ -614,6 +629,9 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -628,6 +646,9 @@
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
+  }
+  .gap-7 {
+    gap: calc(var(--spacing) * 7);
   }
   .gap-9 {
     gap: calc(var(--spacing) * 9);
@@ -652,6 +673,9 @@
   }
   .rounded-\[7px\] {
     border-radius: 7px;
+  }
+  .rounded-\[8px\] {
+    border-radius: 8px;
   }
   .rounded-\[9px\] {
     border-radius: 9px;
@@ -879,6 +903,12 @@
   .px-12 {
     padding-inline: calc(var(--spacing) * 12);
   }
+  .px-15 {
+    padding-inline: calc(var(--spacing) * 15);
+  }
+  .px-20 {
+    padding-inline: calc(var(--spacing) * 20);
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
@@ -906,11 +936,17 @@
   .py-9 {
     padding-block: calc(var(--spacing) * 9);
   }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
   }
   .py-15 {
     padding-block: calc(var(--spacing) * 15);
+  }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
   }
   .pt-\[100px\] {
     padding-top: 100px;
@@ -1101,6 +1137,9 @@
   }
   .text-\[\#e68815\] {
     color: #e68815;
+  }
+  .text-\[\#fffff\] {
+    color: #fffff;
   }
   .text-\[\#ffffff\] {
     color: #ffffff;
